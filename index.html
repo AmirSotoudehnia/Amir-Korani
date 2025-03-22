@@ -23,6 +23,13 @@
       height: 200px;
       object-fit: cover;
     }
+    .gallery-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -93,17 +100,22 @@
     <h2>TiLECAT Gallery</h2>
   </div>
   <div class="row">
-    <!-- Loop through images cat_1.png to cat_14.png -->
-    <!-- You can add more or remove as needed -->
-    <script>
-      const galleryContainer = document.currentScript.parentElement;
-      for (let i = 1; i <= 14; i++) {
-        const col = document.createElement("div");
-        col.className = "col-md-3 mb-4";
-        col.innerHTML = `<img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_${i}.png" class="img-fluid rounded shadow-sm" alt="cat_${i}">`;
-        galleryContainer.appendChild(col);
-      }
-    </script>
+    <!-- Manually listing images with consistent style -->
+    <!-- You can repeat or expand this as needed -->
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_1.png" class="gallery-img" alt="cat 1"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_2.png" class="gallery-img" alt="cat 2"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_3.png" class="gallery-img" alt="cat 3"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_4.png" class="gallery-img" alt="cat 4"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_5.png" class="gallery-img" alt="cat 5"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_6.png" class="gallery-img" alt="cat 6"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_7.png" class="gallery-img" alt="cat 7"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_8.png" class="gallery-img" alt="cat 8"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_9.png" class="gallery-img" alt="cat 9"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_10.png" class="gallery-img" alt="cat 10"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_11.png" class="gallery-img" alt="cat 11"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_12.png" class="gallery-img" alt="cat 12"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_13.png" class="gallery-img" alt="cat 13"></div>
+    <div class="col-md-3 mb-4"><img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/cat_14.png" class="gallery-img" alt="cat 14"></div>
   </div>
 </section>
 
@@ -114,7 +126,7 @@
   <div class="row">
     <div class="col-md-6 mb-4">
       <div class="card project-card">
-        <img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/dog_background.png" class="card-img-top" alt="TiLEHDOG Preview">
+        <img src="https://raw.githubusercontent.com/amirsotoudehnia/Amir-Korani/main/images/bg.jpg" class="card-img-top" alt="TiLEHDOG Preview">
         <div class="card-body">
           <h5 class="card-title">TiLEHDOG</h5>
           <p class="card-text">Coming soon: a new game made for dogs! Stay tuned for exciting updates.</p>
